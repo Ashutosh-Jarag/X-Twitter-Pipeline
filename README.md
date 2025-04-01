@@ -17,17 +17,17 @@ This project is a data engineering pipeline that extracts tweets from X (Twitter
 - Seamless integration with AWS (e.g., S3) for scalable data storage
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/username/twitter-data-pipeline.git`
+1. Clone the repository: `git clone https://github.com/Ashutosh-Jarag/X-Twitter-Data-pipeline.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Set up Airflow:
    - Initialize the Airflow database: `airflow db init`
    - Start the Airflow webserver: `airflow webserver --port 8080`
    - Start the Airflow scheduler: `airflow scheduler`
 4. Configure AWS credentials (e.g., via `aws configure` or environment variables)
-5. Update the `dags/twitter_pipeline.py` file with your Twitter API keys and AWS bucket details
+5. Update the `dags/x-dag.py` file with your Twitter API keys and AWS bucket details
 
 ## Usage
-1. Place the DAG file (`twitter_pipeline.py`) in your Airflow `dags` folder
+1. Place the DAG file (`x-dag.py`) in your Airflow `dags` folder
 2. Access the Airflow UI at `http://localhost:8080` to trigger or schedule the pipeline
 3. Monitor the pipeline execution and check the CSV output in your specified AWS S3 bucket
 
